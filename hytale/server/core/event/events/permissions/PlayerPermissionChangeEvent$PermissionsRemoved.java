@@ -1,0 +1,80 @@
+/*    */ package com.hypixel.hytale.server.core.event.events.permissions;
+/*    */ 
+/*    */ import java.util.Collections;
+/*    */ import java.util.Set;
+/*    */ import java.util.UUID;
+/*    */ import javax.annotation.Nonnull;
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ public class PermissionsRemoved
+/*    */   extends PlayerPermissionChangeEvent
+/*    */ {
+/*    */   @Nonnull
+/*    */   private final Set<String> removedPermissions;
+/*    */   
+/*    */   public PermissionsRemoved(@Nonnull UUID playerUuid, @Nonnull Set<String> removedPermissions) {
+/* 66 */     super(playerUuid);
+/* 67 */     this.removedPermissions = removedPermissions;
+/*    */   }
+/*    */   
+/*    */   @Nonnull
+/*    */   public Set<String> getRemovedPermissions() {
+/* 72 */     return Collections.unmodifiableSet(this.removedPermissions);
+/*    */   }
+/*    */ }
+
+
+/* Location:              C:\Users\ralex\Downloads\hytale-downloader\2026.01.13-50e69c385\Server\HytaleServer.jar!\com\hypixel\hytale\server\core\event\events\permissions\PlayerPermissionChangeEvent$PermissionsRemoved.class
+ * Java compiler version: 21 (65.0)
+ * JD-Core Version:       1.1.3
+ */
